@@ -1,0 +1,40 @@
+table{
+    width:auto;
+    border-collapse: collapse;
+    padding-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    background-color: blue;
+}
+
+tr:nth-child(odd){
+    background-color: gray;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+
+body{
+    background-color: green;
+}
+
+h2, h3{
+    text-align: center;
+    color: gold;
+}
+ol{
+    list-style: none;
+    text-align: center;
+}
+li{
+    list-style: none;
+}

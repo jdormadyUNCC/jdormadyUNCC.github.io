@@ -1,0 +1,53 @@
+h1 {
+    text-align:center;
+    color: gold;
+    }
+h2 {
+    text-align: center;
+    color: gold;
+}
+nav {
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: white;
+}
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+body {
+    background-color: darkgreen;
+}
+nav, nav a {
+    color: silver
+}
+nav a:hover {
+    color: gold;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure figcaption {
+    color: white;
+    caption-side: bottom;
+    text-align: center;
+    font-style: italic;
+}
+li {
+    color: white;
+    list-style: disc;
+    
+}
+.textbox {
+    margin-left:20px;
+    
+    
+}
