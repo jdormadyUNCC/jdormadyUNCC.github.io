@@ -1,0 +1,31 @@
+body {
+    background-color: #5f9ea0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    color: rgb(242, 243, 204);
+    text-decoration: none;
+}
+a:hover {
+    color:darkmagenta;
+}
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%
+}
+p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2 {
+    text-align: center;
+}
+img{
+    width: 60%;    
+}
+figure{
+    text-align: center;
+    font-style: italic;
+}
