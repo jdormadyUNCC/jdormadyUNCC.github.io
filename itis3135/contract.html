@@ -15,13 +15,20 @@
             <a href = "introduction.html">Introduction</a>
             ||
             <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
         </nav>  
     </header>
     
     <main>
         <h2>Contract</h2>
-        <p>I, Jacob C. Dormady agree to abide by the terms in my Spring 2024 ITIS-3135-091 Web Based App Design and Development with my instructor, D.I. Von Briesen. I understand that all work that I do on my school and personal websited will be publicly available to the world. I will not put onformation there that is innappropiate for schoolwork, or that I wish to keep private.</p>
-        <p>Signed: <i>Jacob C Dormady, 1/24/2024</i></p>
+        <p>I, FIRST M. LAST agree to abide by the terms of the course contract in my
+            SEMESTER 2024, SPRING, ITIS 3135 course with my instructor, Professor D.I. von Briesen.
+            I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
+            I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.
+            I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly.
+            I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.
+            Signed: <i>Jacob C. Dormady</i> , 1/24/2024</p>
         
     </main>
 
@@ -42,27 +49,20 @@
             <a href="https://www.linkedin.com/in/jacobdormadyuncc/">Linkedin</a>
         </nav>
         <p>Page Built by <a href="jollydog.com/">Jolly Dog Designs</a>&copy; 2024</p>
-
-     <!-- VALIDATOR LINKS-->
-     <a href="https://validator.w3.org/check?uri=referer">
-        <img style="border:0; width:88px; height: 31px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
-
-    </a>
-
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    
-    </a>
-
-
- 
-
-
     </footer>
 
+    <!-- VALIDATOR LINKS-->
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0; width:88px; height: 31px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    </a>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
-<script>
-    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-</script>
 </html>

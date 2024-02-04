@@ -3,10 +3,14 @@ body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-a {
+nav{ 
     color: rgb(242, 243, 204);
     text-decoration: none;
 }
+nav a{
+    color: rgb(242,243,204);
+}
+
 a:hover {
     color:darkmagenta;
 }
@@ -19,7 +23,11 @@ p{
     margin-left: 20%;
     margin-right: 20%;
 }
+h1{
+    color: #2366ac;
+}
 h2 {
+    color: #2366ac;
     text-align: center;
 }
 img{
@@ -27,5 +35,14 @@ img{
 }
 figure{
     text-align: center;
+}
+figcaption{
     font-style: italic;
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+footer p a{
+    color: rgb(242, 243, 204);
 }
