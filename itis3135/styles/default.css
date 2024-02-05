@@ -42,7 +42,22 @@ figcaption{
 table{
     text-align: center;
     margin: auto;
+    border: 2px solid hsl(103, 95%, 85%);
+}
+th, td {
+    border: 1px solid hsl(103, 95%, 85%);
+    padding: 10px;
 }
 footer p a{
     color: rgb(242, 243, 204);
+}
+form{
+    font-weight: bold;
+}
+button{
+    background-color: black;
+    color: white;
+}
+label{
+    padding-right: 8px;
 }

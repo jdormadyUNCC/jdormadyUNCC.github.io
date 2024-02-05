@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jacob Dormadys Jolly Dog || ITIS3135 || Forms</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head> 
+    <body>
+        <header>
+            <h1>Jacob Dormadys Jolly Dog || ITIS3135 || Forms</h1>  
+            <nav>
+                <a href="./">Home</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="contract.html">Contract</a>
+                ||
+                <a href="tables.html">Tables</a>
+                ||
+                <a href="forms.html">Forms</a>
+            </nav>  
+        </header>
+    
+        <main>
+            <h2>Customer Survey</h2>
+
+            <form action="#" method="post" id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Scooby Doo" size="40" required>
+                <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="someone@email.com" size="40" required>
+                <br>
+
+                <label for="dropdown">How did you hear about us?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="option 1">T.V</option>
+                    <option value="option 2">Internet</option>
+                    <option value="option 3">Social Media</option>
+                    <option value="option 4">Friends or Family</option>
+                    <option value="option 5">Other</option>
+                </select>
+                <br>
+
+                <label for="checkbox">Would you like special offers and news updates?</label>
+                <br>
+                <input type="checkbox" id="option1" name="option1" value="option1">
+                <label for="option1">Text</label>
+                <br>
+
+                <input type="checkbox" id="option2" name="option2" value="option2">
+                <label for="option2">Email</label>
+                <br>
+
+                <input type="checkbox" id="option3" name="option3" value="option3">
+                <label for="option3">Fax</label>
+                <br>
+
+                <label for="radiobutton">What size dog do you have?</label>
+                <br>
+                <input type="radio" id="radio1" name="radioGroup" value="radio1">
+                <label for="radio1">Small</label>
+
+                <input type="radio" id="radio2" name="radioGroup" value="radio2">
+                <label for="radio2">Large</label>
+
+                <input type="radio" id="radio3" name="radioGroup" value="radio3">
+                <label for="radio3">Both</label>
+                <br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+            </form>
+               
+        </main>
+
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/jdormady/">Charlotte.edu</a>
+                ||
+                <a href="https://github.com/jdormadyUNCC">GitHub repository</a>
+                ||
+                <a href="https://jdormadyuncc.github.io/">Github Pages</a>
+                ||
+                <a href="https://jdormadyuncc.github.io/itis3135/">GitHub Course page</a>
+                ||
+                <a href="https://www.freecodecamp.org/jdormadyUNCC">FreeCodeCamp</a>
+                ||
+                <a href="https://www.codecademy.com/profiles/jdormadyUNCC">Code Academy</a>
+                ||
+                <a href="https://www.linkedin.com/in/jacobdormadyuncc/">Linkedin</a>
+            </nav>
+            <p>Page Built by <a href="jollydog.com/">Jolly Dog Designs</a>&copy; 2024</p>
+
+       
+    </footer>
+    <!-- VALIDATOR LINKS-->
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0; width:88px; height: 31px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    </a>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
