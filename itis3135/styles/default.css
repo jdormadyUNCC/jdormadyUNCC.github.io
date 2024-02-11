@@ -78,3 +78,6 @@ button{
 label{
     padding-right: 8px;
 }
+fieldset{
+    border-style: none;
+}

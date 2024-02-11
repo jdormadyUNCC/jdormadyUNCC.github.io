@@ -38,8 +38,8 @@
                 <input type="email" id="email" name="email" placeholder="someone@email.com" size="40" required>
                 <br>
 
-                <label for="dropdown-menu">How did you hear about us?</label>
-                <select id="dropdown-menu" name="dropdown">
+                <label for="dropdown">How did you hear about us?</label>
+                <select id="dropdown" name="dropdown">
                     <option value="" disabled selected hidden>Select an option</option>
                     <option value="option 1">T.V</option>
                     <option value="option 2">Internet</option>
@@ -49,31 +49,33 @@
                 </select>
                 <br>
 
-                <label for="checkbox-menu">Would you like special offers and news updates?</label>
-                <br>
-                <input type="checkbox" id="checkbox-menu" name="option1" value="option1">
-                <label for="option1">Text</label>
-                
+                <fieldset>
+                    <legend>Would you like special offers and news updates?</legend>
+                    <br>
+                    <input type="checkbox" id="option1" name="option1" value="option1">
+                    <label for="option1">Text</label>
+                    
+                    <input type="checkbox" id="option2" name="option2" value="option2">
+                    <label for="option2">Email</label>
 
-                <input type="checkbox" id="checkbox-menu" name="option2" value="option2">
-                <label for="option2">Email</label>
-                
+                    <input type="checkbox" id="option3" name="option3" value="option3">
+                    <label for="option3">Fax</label>
+                    <br>
+                </fieldset>
 
-                <input type="checkbox" id="checkbox-menu" name="option3" value="option3">
-                <label for="option3">Fax</label>
-                <br>
+                <fieldset>
+                    <legend for="radiobutton">What size dog do you have?</legend>
+                    <br>
+                    <input type="radio" id="radio1" name="radioGroup" value="radio1">
+                    <label for="radio1">Small</label>
 
-                <label for="radiobuttonset">What size dog do you have?</label>
-                <br>
-                <input type="radio" id="radio1" name="radioGroup" value="radio1">
-                <label for="radio1">Small</label>
+                    <input type="radio" id="radio2" name="radioGroup" value="radio2">
+                    <label for="radio2">Large</label>
 
-                <input type="radio" id="radio2" name="radioGroup" value="radio2">
-                <label for="radio2">Large</label>
-
-                <input type="radio" id="radio3" name="radioGroup" value="radio3">
-                <label for="radio3">Both</label>
-                <br>
+                    <input type="radio" id="radio3" name="radioGroup" value="radio3">
+                    <label for="radio3">Both</label>
+                    <br>
+                </fieldset>
 
                 <button type="reset">Reset</button>
                 <button type="submit">Submit</button>
@@ -99,9 +101,7 @@
                 <a href="https://www.linkedin.com/in/jacobdormadyuncc/">Linkedin</a>
             </nav>
             <p>Page Built by <a href="jollydog.com/">Jolly Dog Designs</a>&copy; 2024</p>
-
-       
-    </footer>
+        </footer>
     <!-- VALIDATOR LINKS-->
     <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
         <img style="border:0; width:88px; height: 31px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
