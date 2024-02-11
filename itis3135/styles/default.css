@@ -39,20 +39,37 @@ figure{
 figcaption{
     font-style: italic;
 }
-table{
-    text-align: center;
-    margin: auto;
-    border: 2px solid hsl(103, 95%, 85%);
-}
-th, td {
-    border: 1px solid hsl(103, 95%, 85%);
-    padding: 10px;
-}
 footer p a{
     color: rgb(242, 243, 204);
 }
+
+#catagory-row{
+    background-color: gray;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(186, 165, 165);
+}
+thead{
+    background-color: #2366ac;
+}
+table{
+    text-align: center;
+    margin: auto;
+    border: 2px solid hsl(0, 0%, 0%);
+}
+th, td {
+    border: 1px solid hsl(0, 0%, 0%);
+    padding: 10px;
+}
+
+
+
 form{
     font-weight: bold;
+    text-align: center;
 }
 button{
     background-color: black;

@@ -26,54 +26,54 @@
         <h2>HTML Tables</h2>
         <h3>My Tablular Data</h3>
         <ol>
-            <li>Michael Scott, MichaelScott@JollyCo.com, 80,000$</li>
-            <li>Dwight Schrute, DwightSchrute@JollyCo.com, 65,000$</li>
-            <li>Jim Halpert, JimHalpert@JollyCo.com, 65,000$</li>
-            <li>Darryl Philbin, DarrylPhilbin@JollyCo.com, 55,000$</li>
-            <li>Andy Bernard. AndyBernard@JollyCo.com, 45,000$</li>
-            <li>Pam Beesly, PamBeesly@JollyCo.com, 50,000$</li>
-            <li>Angela Martin, AngelaMartin@JollyCo.com, 45,000$</li>
+            <li>Michael Scott, MichaelScott@JollyCo.com, 15 years</li>
+            <li>Dwight Schrute, DwightSchrute@JollyCo.com, 12 years</li>
+            <li>Jim Halpert, JimHalpert@JollyCo.com, 12 years</li>
+            <li>Darryl Philbin, DarrylPhilbin@JollyCo.com, 10 years</li>
+            <li>Andy Bernard. AndyBernard@JollyCo.com, 5 years</li>
+            <li>Pam Beesly, PamBeesly@JollyCo.com, 14 years</li>
+            <li>Angela Martin, AngelaMartin@JollyCo.com, 10 years</li>
         </ol>
         <table>
             <tr>
                 <th>NAME</th>
                 <th>EMAIL</th>
-                <th>SALARY</th>
+                <th>YEARS OF SERVICE</th>
             </tr>
             <tr>
                 <td>Michael Scott</td>
                 <td>MichaelScott@JollyCo.com</td>
-                <td>80,000$</td>
+                <td>15 years</td>
             </tr>
             <tr>
                 <td>Dwight Schrute</td>
                 <td>DwightSchrute@JollyCo.com</td>
-                <td>65,000$</td>
+                <td>12 years</td>
             </tr>
             <tr>
                 <td>Jim Halpert</td>
                 <td>JimHalpert@JollyCo.com</td>
-                <td>65,000$</td>
+                <td>10 years</td>
             </tr>
             <tr>
                 <td>Darryl Philbin</td>
                 <td>DarrylPhilbin@JollyCo.com</td>
-                <td>55,000$</td>
+                <td>10 years</td>
             </tr>
             <tr>
                 <td>Andy Bernard</td>
                 <td>AndyBernard@JollyCo.com</td>
-                <td>45,000$</td>
+                <td>5 years</td>
             </tr>
             <tr>
                 <td>Pam Beesly</td>
                 <td>PamBeesly@JollyCo.com</td>
-                <td>50,000$</td>
+                <td>14 years</td>
             </tr>
             <tr>
                 <td>Angela Martin</td>
                 <td>AngelaMartin@JollyCo.com</td>
-                <td>45,000$</td>
+                <td>10 years</td>
             </tr>
         </table>
 
@@ -82,59 +82,64 @@
             <figcaption>Employee Information</figcaption>
             <table>
                 <thead>
-                    <tr>
+                    <tr id="catagory-row">
                         <th>CATAGORY</th>
                         <th>NAME</th>
                         <th>EMAIL</th>
-                        <th>SERVICE</th>
+                        <th>YEARS OF SERVICE</th>
                         <th>SALARY</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Boss</td>
+                        <td style="background-color: white;">BOSS</td>
                         <td>Michael Scott</td>
                         <td>MichaelScott@JollyCo.com</td>
-                        <td>15 Years</td>
+                        <td>15 years</td>
                         <td>80,000$</td>
                     </tr>
                     <tr>
-                        <td rowspan="2">ASISTANT</td>
+                        <td rowspan="2" style="background-color: white;">ASISTANT</td>
                         <td>Dwight Schrute</td>
                         <td>DwightSchrute@JollyCo.com</td>
-                        <td>12 Years</td>
+                        <td>12 years</td>
                         <td>65,000$</td>
                     </tr>
                     <tr>
                         <td>Jim Halpert</td>
                         <td>JimHalpert@JollyCo.com</td>
-                        <td>10 Years</td>
+                        <td>10 years</td>
                         <td>65,000$</td>
                     </tr>
                     <tr>
-                        <td rowspan="4">WORKER</td>
+                        <td rowspan="4" style="background-color: white;">WORKER</td>
                         <td>Darryl Philbin</td>
                         <td>DarrylPhilbin@JollyCo.com</td>
-                        <td>10 Years</td>
+                        <td>10 years</td>
                         <td>55,000$</td>
                     </tr>
                     <tr>
                         <td>Andy Bernard</td>
                         <td>AndyBernard@JollyCo.com</td>
-                        <td>5 Years</td>
+                        <td>5 years</td>
                         <td>45,000$</td>
                     </tr>
                     <tr>
                         <td>Pam Beesly</td>
                         <td>PamBeesly@JollyCo.com</td>
-                        <td>12 Years</td>
+                        <td>14 years</td>
                         <td>50,000$</td>
                     </tr>
                     <tr>
                         <td>Angela Martin</td>
                         <td>AngelaMartin@JollyCo.com</td>
-                        <td>10 Years</td>
+                        <td>10 years</td>
                         <td>45,000$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total Years Of Service and Salary</td>
+                        <td>76 years</td>
+                        <td>405,000$</td>
                     </tr>
                 </tbody>
             </table>
