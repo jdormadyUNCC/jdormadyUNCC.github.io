@@ -7,6 +7,10 @@ nav{
     color: rgb(242, 243, 204);
     text-decoration: none;
 }
+a {
+    color:#2366ac;
+    text-decoration: none;
+}
 nav a{
     color: rgb(242,243,204);
 }

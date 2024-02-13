@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Dormadys Jolly Dog || ITIS3135 || First Scripts</title>
+    <script>
+        function timeAndDate(){
+            var currentDate = new Date();
+        }
+
+
+        function submitUserInformation() {
+            
+            let name = document.getElementById("name");
+            let mood = document.getElementById("mood");
+
+            var greeting = prompt(name,  mood);
+           /* greetingElement.innerHTML = `The {Your Company Name} welcomes you, ${name}!<br>We're glad you are feeling ${mood}!`;*/
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="submitUserInformation()"></button>
+    </main>
+</body>
+</html>
+
