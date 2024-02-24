@@ -3,6 +3,9 @@ body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+header h3{
+    color: #2366ac;
+}
 nav{ 
     color: rgb(242, 243, 204);
     text-decoration: none;
