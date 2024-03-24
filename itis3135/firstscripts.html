@@ -4,26 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Dormadys Jolly Dog || ITIS3135 || First Scripts</title>
-    <script>
-        function timeAndDate(){
-            var currentDate = new Date();
-        }
-
-
-        function submitUserInformation() {
-            
-            let name = document.getElementById("name");
-            let mood = document.getElementById("mood");
-
-            var greeting = prompt(name,  mood);
-           /* greetingElement.innerHTML = `The {Your Company Name} welcomes you, ${name}!<br>We're glad you are feeling ${mood}!`;*/
-        }
-    </script>
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
     <main>
-        <button onclick="submitUserInformation()"></button>
+        <!-- test alert -->
+        <h2>First Scripts</h2>
+        <button type="button" onclick="scriptTest()">Script test</button>
+        
+        <!-- date and time -->
+        <h3>Date and time</h3>
+        <p id="date-and-time"></p>
+        
+        <!-- greeting -->
+        <h3>Greeting</h3>
+        <p>What is Your Name?</p>
+        <input id="user-name">
+        <p>How are you today?</p>
+        <input id="user-mood">
+        <button onclick="greeting()">Enter</button>
+        <p id="greeting"></p>
+        
+        <!-- polygon alert -->
+        <h3>Polygon Alert</h3>
+        <p>Enter your favorite number between 1-10</p>
+        <input id="polygon-number">
+        <button onclick="polygonAlert()">Enter</button>
+        <p id="polygon-return"></p>
+
     </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
 
