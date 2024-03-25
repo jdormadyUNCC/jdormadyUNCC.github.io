@@ -3,24 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Website</title>
+    <title>Jacob Dormadys Video Game Website</title>
     <link href="/itis3135/hobby/images/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="hobby_stylesheet.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* Dark background color */
+  color: #fff; /* White text color */
+  line-height: 1.6;
+}
+
+nav {
+  font-size: 20px;
+}
+
+figure {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+img {
+  max-width: 20%;
+  align-self: center; /* Align image vertically */
+}
+
+/* Header styles */
+header {
+  background-color: #282c37;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section styles */
+section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #3c4256;
+  border-radius: 10px;
+  min-width: 300px; /* Minimum width for each section */
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: #cfae0b; /* Reddish color for headings */
+  padding-left: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 20px;
+}
+
+/* Link styles */
+a {
+  color: #4caf50; /* Green link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff7f50; /* Light coral on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Rule Overides for mobile devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+  img {
+    min-width: 150px;
+    width: 100%;
+}
+}
+
+</style>
 </head>
 <body>
     <header>
         <h1>Video Games</h1>
         <nav>
-            <a href="#my-intoduction-to-video-games">My Intro to Gaming</a>
-            ()
+            <a href="#my-intoduction-to-video-games">My Introduction to Gaming</a>
+            Φ
             <a href="#favorite-video-games">Favorite Games</a>
-            ()
-            <a href="#what-is-video-games">Other Game Things</a>
-            ()
+            Φ
+            <a href="#introduction">Home</a>
+            Φ
             <a href="#other-games">Other games</a>
-            ()
+            Φ
             <a href="#how-to-play-melee">Play Melee</a>
-            ()
+            Φ
             <a href="#ai-prompts">AI Prompts</a>
         </nav>
     </header>
@@ -31,28 +160,14 @@
         <section id="my-intoduction-to-video-games">
 
             <!--gamebpy advanced-->
-            <h2>My Intro to gaming section</h2>
+            <h2>My Introduction to Video Games</h2>
             <h3>Christmas 2004</h3>
-            <div class="image-paragraph-container">
             <figure>
-                <!--<img src="gameboy-advanced-picture.jpg" alt="Gameboy Advanced">-->
-                <div class="image-placeholder"></div>
-                <figcaption><i>My Original Gameboy Advanced</i></figcaption>
-            </figure>
-            <p>Pictured above is the first device I owned.</p>
-            </div>
-            <br>
-            <br>
-
-            <!--pokemon green-->
-            <div class="image-paragraph-container">
-            <figure>
-                <!--<img src="gameboy-advanced-picture.jpg" alt="Gameboy Advanced">-->
+                <img src="images/gameboy_pokemon_green.jpg" alt="Gameboy Advanced">
                 <div class="image-placeholder"></div>
                 <figcaption><i>Pokemon Leaf Green</i></figcaption>
             </figure>
             <p>First game, I recieved it along with the gameboy advanced. Before this, I had no idea what pokemon was. Being my first video game, I must have put over 500 hours into it.</p>
-            </div>
         </section>
 
         <!--Section 2-->
@@ -61,34 +176,30 @@
             <h3>The Legend of Zelda</h3>
             
             <!--TP SECTION-->
-            <div class="image-paragraph-container">
+        
             <figure>
-                <!--<img src="Twilight princess.jpg" alt="Twilight Princess For the Nintendo Wii">-->
-                <div class="image-placeholder"></div>
+                <img src="images/twilight_princess.jpg" alt="Twilight Princess For the Nintendo Wii">
                 <figcaption><i>The Legend of Zelda, Twilight Princess</i></figcaption>
             </figure>
             <p>My all time favorite Zelda game, and possibly favorite game in general, it was also the first Zelda game I played. I got it back in 2010 and since then I have probably played through it over 20 times. Compared to the other Zelda games, this games darker themes and visuals stand out.</p>
-            </div>
+            
 
             <!--SS SECTION-->
-            <div class="image-paragraph-container">
+            
                 <figure>
-                    <!--<img src="Skyward Sword.jpg" alt="Skyward Sword For the Nintendo Wii">-->
-                    <div class="image-placeholder"></div>
+                    <img src="images/skyward_sword.jpg" alt="Skyward Sword For the Nintendo Wii">
                     <figcaption><i>The Legend of Zelda, Skyward Sword</i></figcaption>
                 </figure>
             <p>The Legend of Zelda, Skyward Sword is my second favorite Zelda game. This game utilized the Wii motion plus to track the Wii remote movement more accuratly and gives the game a more realistic feel in terms of combat.</p>
-            </div>
             
             <!--BOTW SECTION-->
-            <div class="image-paragraph-container">
+            
                 <figure>
-                    <!--<img src="Breath of the Wild.jpg" alt="Breath of the Wild for the Nintendo Switch">-->
-                    <div class="image-placeholder"></div>
+                    <img src="images/breath_of_the_wild.jpg" alt="Breath of the Wild for the Nintendo Switch">
                     <figcaption><i>The Legend of Zelda, Breath of the Wild</i></figcaption>
                 </figure>
             <p>The Legend of Zelda, Breath of the Wild is my third favorite game in the series. Unlike the other Zelda games, this one was the first to be open world. This game features a wide variety of puzzles, combat challenges and secrets all throughout a huge open world. It also looks great, despite the Switches underperformance.</p>
-            </div>
+          
 
         </section>
 
@@ -98,31 +209,26 @@
             <h2>Games I would Reccomend</h2>
 
             <h3>Elden Ring</h3>
-            <div class="image-paragraph-container">
                 <figure>
                     <!--<img src="Elden Ring.jpg" alt="Elden Ring symbol">-->
                     <div class="image-placeholder"></div>
                     <figcaption><i>Symbol of the Golden Order</i></figcaption>
                 </figure>
             <p>Elden Ring is a souls-like game from Fromsoft, the team that made Dark Souls. This game, like many others, was my first experience with a souls game. The thing about souls games is that they are meant to be pretty challenging, and can even feel unfair at times, but it is never impossible. It is an action rpg, with its main focus in combat. The enemies and bosses are difficult but it makes the game more exciting.</p>
-            </div>
+            
 
             <h3>Crash Bandicoot</h3>
-            <div class="image-paragraph-container">
                 <figure>
-                    <!--<img src="CrashBandicoot.jpg" alt="CrashBandicoot">-->
-                    <div class="image-placeholder"></div>
+                    <img src="images/crash_1_2_3.jpg">
                     <figcaption><i>Crash 1, 2, 3</i></figcaption>
                 </figure>
             <p>The first console games I ever played. Crash Bandicoot is a 3d platformer, originally released for the Playstion in 1996. Two more games were released after in the ps1 trilogy. I really like the movement in these games, its fast and responsive and rewards good gameplay. In the third game, they introduced a time trial mode that really takes the gameplay to a new level. In these, you will need to play close to perfect and optimize your movement to get the highest reward for the time trial.</p>
-            </div>
+
 
             <h3>Katamari Damacy</h3>
-            <div class="image-paragraph-container">
                 <figure>
-                    <!--<img src="Katamari Damacy.jpg" alt="Katamari Damacy">-->
-                    <div class="image-placeholder"></div>
-                    <figcaption><i>Katamari Damacy</i></figcaption>
+                    <img src="images/we_love_katamari.jpg" alt="Katamari Damacy">
+                    <figcaption><i>We love Katamari Damacy</i></figcaption>
                 </figure>
             <p>This game is a bit weird, and there isnt really anything else like it in terms of style and gameplay. The games story starts with the King of Cosmos accidently destroying the stars and planets. After awknoledging his mistake, he sends his 5cm tall son to earth with a magic ball called a katamari. Things smaller than the katamari will stick to it, and eventually cause it to grow in size. When they are big enough they are thrown into the sky and turned into planets and stars. A pretty relaxing game with lots of charm.</p>
             </div>
@@ -130,11 +236,15 @@
         </section>
 
         <!--Section 4-->
-        <section id="what-is-video-games">
-            <h2>My collection so far</h2>
-            
-            <p>info about systems</p>
-            <p>Other cool game stuff</p>
+        <section id="introduction">
+            <h2>Home</h2>
+            <p>Hello! My name is Jacob Dormady and welcome to my webpage! On these pages I share more about some of my favorite games and how I started to play.</p>
+            <figure>
+                <img src="images/ai_image_collection.png">
+                <figcaption><i>Just some of the rare games in my collection</i></figcaption>
+            </figure>
+            <p><i>Ai used, PIXLR. Prompt: Generate a photorealistic image of a game collection</i></p>
+            <p>Pictured above are some of the more rare and saught after games in my collection. Some featured in the picture are LSD Dream simulator, a strange and bizzare walking simulater for the playstation, Vib Ribbon, a wacky rythm game, and a working mint condition Atari E.T: The extra terrestrial.</p>
         </section>
 
         <!--Section-->
@@ -147,9 +257,11 @@
 
         <!--AI PROMPTS-->
         <section id="ai-prompts">
-            <h2>AI Prompts</h2>
+            <h2>AI Prompts used</h2>
             <ul>
-                <li>please help, the script at the bottom is supposed to hide the other sections when they are not clicked in the nav bar. It should work like this: When a user clicks a link in the nav bar, it should hide the other sections not being viewed.</li>
+                <li>Chat GPT, Prompt: help give me a bas style for my code. It is for a video game hobby website</li>
+                <li>Chat GPT, Prompt: please help, the script at the bottom is supposed to hide the other sections when they are not clicked in the nav bar. It should work like this: When a user clicks a link in the nav bar, it should hide the other sections not being viewed.</li>
+                <li>Chat GPT, Prompt: I need to have the default page be the introduction section, so that it will be the first section that the user sees.</li>
             </ul>
         </section>
 
@@ -157,7 +269,7 @@
     </main>
 
     <footer>
-        <script>
+       <!-- <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const sections = document.querySelectorAll('main section');
                 const navLinks = document.querySelectorAll('nav a');
@@ -177,20 +289,69 @@
                     });
                 });
             });
-        </script>
 
-<a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            document.addEventListener('DOMContentLoaded', function () {
+    // Get the introduction section by its ID
+    const introductionSection = document.getElementById('introduction');
+
+    // Hide all sections initially
+    const sections = document.querySelectorAll('main section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the introduction section by default
+    introductionSection.style.display = 'block';
+     });
+        </script> -->
+
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
     <img style="border:0; width:88px; height: 31px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
-</a>
+    </a>
 
-<a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
     <img style="border:0; width:88px; height:31px;" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-</a>
+    </a>
 
-<a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/jdormady/itis3135/hobby/index.html" id="validation_link_accessibility">
+    <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/jdormady/itis3135/hobby/index.html" id="validation_link_accessibility">
     <img style="border:0; width:88px; height:31px;" src="images/button_validation_wcag.png" alt="Valid Accessibility!">
-</a>
-    </footer>
+    </a>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('main section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetSectionId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetSectionId);
+
+                if (targetSection) {
+                    sections.forEach(section => {
+                        section.style.display = 'none'; // Hide all sections
+                    });
+                    targetSection.style.display = 'block'; // Show the target section
+                }
+            });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+// Get the introduction section by its ID
+const introductionSection = document.getElementById('introduction');
+
+// Hide all sections initially
+const sections = document.querySelectorAll('main section');
+sections.forEach(section => {
+section.style.display = 'none';
+});
+
+// Show the introduction section by default
+introductionSection.style.display = 'block';
+});
+</script>
 
 </body>
 </html>
