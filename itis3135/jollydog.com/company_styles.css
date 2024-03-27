@@ -8,8 +8,11 @@ body {
 footer{
     text-align: center;
 }
+a {
+    text-decoration: none;
+}
 p {
-    color: #Ba2C73;
+    color:rgb(59, 108, 0);
     background-color: #D6D5C9;
     padding-left: 30px;
     padding-right: 30px;
@@ -21,6 +24,7 @@ header , h2{
     padding-right: 30px;
     margin-right: 20%;
     margin-left: 20%;
+    color:rgba(117, 49, 0, 0.856)
     
 }
 
@@ -30,6 +34,7 @@ ul {
     padding-right: 30px;
     margin-right: 20%;
     margin-left: 20%;
+    color: #Ba2C73;
 }
 
 
