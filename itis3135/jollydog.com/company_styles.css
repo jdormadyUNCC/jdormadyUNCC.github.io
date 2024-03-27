@@ -13,13 +13,14 @@ a {
 }
 p {
     color:rgb(59, 108, 0);
-    background-color: #D6D5C9;
+    background-color: #deddcf;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: 20%;
     margin-left: 20%;
 }
 header , h2{
+    
     padding-left: 30px;
     padding-right: 30px;
     margin-right: 20%;
@@ -34,7 +35,11 @@ ul {
     padding-right: 30px;
     margin-right: 20%;
     margin-left: 20%;
-    color: #Ba2C73;
+    color: #b00101;
+    background-color: #deddcf;
+}
+footer p{
+    color: #167eb5;
 }
 
 
