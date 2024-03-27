@@ -20,27 +20,30 @@ function greeting(){
 // TODO: fix function to work with negative
 function polygonAlert(){
     let userInput = document.getElementById("polygon-number").value;
-    if (userInput <= -10){
+    let userInputInteger = parseInt(userInput);
+    let AbsoluteInputInteger = Math.abs(userInputInteger);
+
+    if (AbsoluteInputInteger <= -10){
         alert("enter a positive number between 1 and 10!");
-    } else if(userInput <= 1){
+    } else if(AbsoluteInputInteger <= 1){
         alert("rounded up, your polygon is a henagon");
-    } else if(userInput <= 2){
+    } else if(AbsoluteInputInteger <= 2){
         alert("rounded up, your polygon is a digon");
-    } else if(userInput <= 3){
+    } else if(AbsoluteInputInteger <= 3){
         alert("rounded up, your polygon is a trigon");
-    } else if(userInput <= 4){
+    } else if(AbsoluteInputInteger <= 4){
         alert("rounded up, your polygon is a tetragon");
-    } else if(userInput <= 5){
+    } else if(AbsoluteInputInteger <= 5){
         alert("rounded up, your polygon is a pentagon");
-    } else if(userInput <= 6){
+    } else if(AbsoluteInputInteger <= 6){
         alert("rounded up, your polygon is a hexagon");
-    } else if(userInput <= 7){
+    } else if(AbsoluteInputInteger <= 7){
         alert("rounded up, your polygon is a septagon");
-    } else if(userInput <= 8){
+    } else if(AbsoluteInputInteger <= 8){
         alert("rounded up, your polygon is an octagon");
-    } else if(userInput <= 9){
+    } else if(AbsoluteInputInteger <= 9){
         alert("rounded up, your polygon is a nonagon");
-    } else if(userInput <= 10){
+    } else if(AbsoluteInputInteger <= 10){
         alert("rounded up, your polygon is");
     } else alert("please enter a number between 1 and 10!");
 }
