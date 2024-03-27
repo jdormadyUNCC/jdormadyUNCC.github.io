@@ -20,11 +20,11 @@ function greeting(){
 // TODO: fix function to work with negative
 function polygonAlert(){
     let userInput = document.getElementById("polygon-number").value;
-    let userInputInteger = parseInt(userInput);
+    let userInputInteger = parseFloat(userInput);
     let AbsoluteInputInteger = Math.abs(userInputInteger);
 
-    if (AbsoluteInputInteger <= -10){
-        alert("enter a positive number between 1 and 10!");
+    if (AbsoluteInputInteger < 10){
+        alert("Please enter a number between 1 and 10!");
     } else if(AbsoluteInputInteger <= 1){
         alert("rounded up, your polygon is a henagon");
     } else if(AbsoluteInputInteger <= 2){
@@ -44,6 +44,34 @@ function polygonAlert(){
     } else if(AbsoluteInputInteger <= 9){
         alert("rounded up, your polygon is a nonagon");
     } else if(AbsoluteInputInteger <= 10){
-        alert("rounded up, your polygon is");
+        alert("rounded up, your polygon is a decagon");
     } else alert("please enter a number between 1 and 10!");
 }
+
+
+
+/*GET RANDOM ELEMENT
+function generateDog(){
+    const dogImageElement = document.getElementById("dog-image");
+    const randomIndex = Math.floor(Math.random() * dogPicturesArray.length);
+    const chosenDog = dogPicturesArray[randomIndex];
+    dogImageElement.src = chosenDog;
+    
+}
+
+/*EVENT LISTENER FOR BUTTON
+document.getElementById('display-dog-button').addEventListener('click', generateDog);
+*/
+/*
+const dogPicturesArray = [
+    "images/Izza.jpg",
+    "images/Izza.jpg",
+    "images/Izza.jpg",
+];
+*/
+/*
+<h3>Radom Dog Event</h3>
+<p>Click the button to see a dog</p>
+<button id="display-dog-button">Click Here</button>
+<img id="dog-image" src="" alt="A random dog">
+*/
