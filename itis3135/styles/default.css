@@ -11,7 +11,7 @@ nav{
     text-decoration: none;
 }
 a {
-    color:#2366ac;
+    color:#b240b6;
     text-decoration: none;
 }
 nav a{
@@ -34,9 +34,10 @@ p{
 h1{
     color: #2366ac;
 }
-h2 {
+h2,h3{
     color: #2366ac;
     text-align: center;
+
 }
 img{
     width: 60%;    
