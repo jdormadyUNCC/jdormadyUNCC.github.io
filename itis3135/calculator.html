@@ -16,10 +16,54 @@
         </header>
     
         <main>
-            <h2>Calculator Web App</h2>
-            <p>Hello, welcome to my ITIS 3135 Page</p>    
-        </main>
+            <h2>Calculator Web App (try)</h2>
+            
+            <input type="text" id="num1" required>
 
+            <input type="text" id="num2" required>
+
+            <input type="text" id="result" disabled>
+
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
+            <button onclick="multiplication()">X</button>
+            <button onclick="division()">/</button>
+        </main>
+       <!-- <script>
+        function addition() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 + num2;
+            document.getElementById("result").value = result;
+        }
+        
+        function subtraction() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 - num2;
+            document.getElementById("result").value = result;
+        }
+        
+        function multiplicaiton(){
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 * num2;
+            document.getElementById("result").value = result;
+        }
+        
+        function division(){
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            if(num2 === 0) {
+                document.getElementById("result").value = "Error";
+            } else {
+                var result = num1 / num2;
+                document.getElementById("result").value = result;
+            }
+        }
+        </script>
+    -->
+        <script src="scripts/calculator_script.js"></script>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
@@ -30,6 +74,6 @@
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script> -->
     <script src="scripts/HTMLInclude.min.js"></script>
-    <script src="calculator_script.js"></script>
+    <!-- <script src="calculator_script.js"></script> -->
 </body>
 </html>
