@@ -1,11 +1,13 @@
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #bcdfc0;
+    color: #2e3a55;
+    /* Add complementary colors to the sides */
+    background-image: linear-gradient(to right, #bcdfc0, #6f97ae, #bcdfc0);
 }
 
 header {
@@ -15,12 +17,13 @@ header {
 
 nav {
     margin-top: 20px;
+    font-size: 20px;
 }
 
 nav a {
     text-decoration: none;
     margin: 0 10px;
-    color: #666;
+    color: #09432a;
 }
 
 main {
@@ -64,7 +67,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #000000;
 }
 
 th, td {
@@ -73,7 +76,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #acb0e6;
 }
 
 img {
