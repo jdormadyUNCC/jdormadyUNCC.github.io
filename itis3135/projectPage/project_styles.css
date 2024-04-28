@@ -14,7 +14,11 @@ header {
     text-align: center;
     margin-bottom: 40px;
 }
-
+#paper_background {
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 nav {
     margin-top: 20px;
     font-size: 20px;

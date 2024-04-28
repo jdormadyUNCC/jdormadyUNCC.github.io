@@ -29,69 +29,86 @@
             <br>
             <p>Page will use java script to cycle images and paragraphs using a carasaol</p>
             <br>
-            <h2>Bee Tree</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
 
-            <h2>Burgin Cove</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
+            <div class="slideshow-container">
 
-            <h2>Camp Branch</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
+                <div class="slideshow-item">
+                    <h2>Bee Tree</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/bee_tree.jpg" alt="Bee Tree">
+                        <figcaption><i>Bee Tree</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
 
-            <h2>Flat Creek</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
-
-            <h2>Grassy Branch</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
-
-            <h2>Haw Creek</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
-
-            <h2>North Fork</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
-
-            <h2>Sweeten Creek</h2>
-            <p></p>
-            <figure>
-                <img src="images/river_placeholder.jpg" alt="river">
-                <figcaption><i>Placeholder Image</i></figcaption>
-            </figure>
-            <br>
+                <div class="slideshow-item">
+                    <h2>Burgin Cove</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/burgin_cove.jpg" alt="Burgin Cove">
+                        <figcaption><i>Burgin Cove</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>Camp Branch</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/camp_branch.jpg" alt="Camp Branch">
+                        <figcaption><i>Camp Branch</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>Flat Creek</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/flat_creek.jpg" alt="Flat Creek">
+                        <figcaption><i>Flat Creek</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>Grassy Branch</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/grassy_branch.jpg" alt="Grassy Branch">
+                        <figcaption><i>Grassy Branch</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>Haw Creek</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/haw_creek.jpg" alt="Haw Creek">
+                        <figcaption><i>Haw Creek</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>North Fork</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/north_fork.jpg" alt="North Fork">
+                        <figcaption><i>North Fork</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+                <div class="slideshow-item"><h2>Sweeten Creek</h2>
+                    <p></p>
+                    <figure>
+                        <img src="images/sweeten_creek.png" alt="Sweeten Creek">
+                        <figcaption><i>Sweeten Creek</i></figcaption>
+                    </figure>
+                    <br>
+                </div>
+            
+            </div>
+            <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
 
         </main>
         
@@ -99,5 +116,30 @@
             <p>Page is work in progress</p>
 
         </footer>
+        <script> const slideshowItems = document.querySelectorAll('.slideshow-item');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+    
+            function showSlide(index) {
+                slideshowItems.forEach(item => item.style.display = 'none');
+                slideshowItems[index].style.display = 'block';
+            }
+    
+            function showPrevSlide() {
+                currentIndex = (currentIndex - 1 + slideshowItems.length) % slideshowItems.length;
+                showSlide(currentIndex);
+            }
+    
+            function showNextSlide() {
+                currentIndex = (currentIndex + 1) % slideshowItems.length;
+                showSlide(currentIndex);
+            }
+    
+            prevBtn.addEventListener('click', showPrevSlide);
+            nextBtn.addEventListener('click', showNextSlide);
+    
+            // Show the first slide initially
+            showSlide(currentIndex);</script>
     </body> 
 
