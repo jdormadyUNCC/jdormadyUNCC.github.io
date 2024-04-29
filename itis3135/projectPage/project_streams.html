@@ -9,17 +9,7 @@
 
     <body>
         <header>
-            <nav>
-                <a href="project_main.html">Home</a>
-                ||
-                <a href="project_streams.html">Locations</a>
-                ||
-                <a href="project_paper.html">Research</a>
-                ||
-                <a href="project_tables.html">Tables and Graphs</a>
-                ||
-                <a href="project_calculator.html">Calculator</a>
-            </nav>
+            <div data-include = "project-components/project-header.html"></div>
         </header>
 
         <!-- Start location section-->
@@ -113,9 +103,11 @@
         </main>
         
         <footer>
-            <p>Page is work in progress</p>
-
+            <div data-include="project-components/project-footer.html"></div>
         </footer>
+        
+        <script src="project-scripts/HTMLInclude.min.js"></script>
+
         <script> const slideshowItems = document.querySelectorAll('.slideshow-item');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
@@ -142,4 +134,5 @@
             // Show the first slide initially
             showSlide(currentIndex);</script>
     </body> 
+</html>
 

@@ -9,29 +9,57 @@
 
     <body>
         <header>
-            <nav>
-                <a href="project_main.html">Home</a>
-                ||
-                <a href="project_streams.html">Locations</a>
-                ||
-                <a href="project_paper.html">Research</a>
-                ||
-                <a href="project_tables.html">Tables and Graphs</a>
-                ||
-                <a href="project_calculator.html">Calculator</a>
-            </nav>
+            <div data-include = "project-components/project-header.html"></div>
         </header>
     
         <!--Calculator-->
         <main>
-            <h1>Calculator / Deffinitions</h1>
-            <p>This page will have a calculator for certain functions, as well as a glossary for Deffinitions</p>
+            <h1>Calculator</h1>
+            <br>
+            <p>For this calculator you can enter the Name, the Biotic Index Number, and the Count of the specimens.</p>
+            <h2>Name</h2>
+            <input type="text" id="name">
+            <h2>Biotic Index Number</h2>
+            <input type="number" id="biotic-index">
+            <h2>Count</h2>
+            <input type="number" id="count">
+
+            <div id="additional-input">
+
+            </div>
+
+            <button onclick="addInputs()">Add Another Set</button>
+            <br>
+            <button onclick="calculate()">Calculate HBI</button>
         </main>
         
         <footer>
-            <P>Page is work in progress</P>
-
+            <div data-include="project-components/project-footer.html"></div>
         </footer>
+        <script src="project-scripts/HTMLInclude.min.js"></script>
+        <script>
+            let inputCounter = 0;
+
+            function addInputs(){
+                inputCounter++;
+                const additionalInput = document.getElementById("additional-input");
+                const newSet = document.createElement("div");
+                newSet.innerHTML= `
+                    <h2>Name ${inputCounter}</h2>
+                    <input type = "text" id="name${inputCounter}">
+                    <h2>Biotic Index Number ${inputCounter}</h2>
+                    <input type="number" id="biotic-index${inputCounter}">
+                    <h2>Count ${inputCounter}</h2>
+                    <input type = "number" id="count${inputCounter}">
+                    `;
+
+                    additionalInput.appendChild(newSet);
+            }
+
+            function calculate(){
+
+            }
+        </script>
     </body> 
 </html>
 
