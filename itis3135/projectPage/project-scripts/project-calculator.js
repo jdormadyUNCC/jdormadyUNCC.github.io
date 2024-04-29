@@ -1,5 +1,5 @@
 let inputCounter = 0;
-
+            //Add another row of data for input
             function addInputs(){
                 inputCounter++;
                 const additionalInput = document.getElementById("additional-input");
@@ -15,7 +15,7 @@ let inputCounter = 0;
 
                     additionalInput.appendChild(newSet);
             }
-
+            //Calculate and display the HBI
             function calculate(){
                 let totalCount = 0;
                 let sumOfIndexCount = 0;
