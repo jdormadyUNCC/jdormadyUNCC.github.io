@@ -14,6 +14,7 @@
     
         <!--Calculator-->
         <main>
+            <!--
             <h1>Calculator</h1>
             <br>
             <p>For this calculator you can enter the Name, the Biotic Index Number, and the Count of the specimens.</p>
@@ -23,10 +24,12 @@
             <input type="number" id="biotic-index">
             <h2>Count</h2>
             <input type="number" id="count">
+            -->
 
             <div id="additional-input">
 
             </div>
+            <p id="result"></p>
 
             <button onclick="addInputs()">Add Another Set</button>
             <br>
@@ -37,29 +40,7 @@
             <div data-include="project-components/project-footer.html"></div>
         </footer>
         <script src="project-scripts/HTMLInclude.min.js"></script>
-        <script>
-            let inputCounter = 0;
-
-            function addInputs(){
-                inputCounter++;
-                const additionalInput = document.getElementById("additional-input");
-                const newSet = document.createElement("div");
-                newSet.innerHTML= `
-                    <h2>Name ${inputCounter}</h2>
-                    <input type = "text" id="name${inputCounter}">
-                    <h2>Biotic Index Number ${inputCounter}</h2>
-                    <input type="number" id="biotic-index${inputCounter}">
-                    <h2>Count ${inputCounter}</h2>
-                    <input type = "number" id="count${inputCounter}">
-                    `;
-
-                    additionalInput.appendChild(newSet);
-            }
-
-            function calculate(){
-
-            }
-        </script>
+        <script src="project-scripts/project-calculator.js"></script>
     </body> 
 </html>
 

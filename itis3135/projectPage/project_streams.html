@@ -17,14 +17,15 @@
         <main>
             <h1>Locations</h1>
             <br>
-            <p>Page will use java script to cycle images and paragraphs using a carasaol</p>
+            <p>Here you can cycle through a variety of pictures and read a little bit about each site.</p>
             <br>
 
             <div class="slideshow-container">
 
                 <div class="slideshow-item">
                     <h2>Bee Tree</h2>
-                    <p></p>
+                    <p>Bee Tree was located underneath a bridge but was located within a slightly rural area. The channel was wide and had fields on one side of the riparian zone. The bank has large hardwoods that provide good shade but do not reach the middle of the stream.
+                    </p>
                     <figure>
                         <img src="images/bee_tree.jpg" alt="Bee Tree">
                         <figcaption><i>Bee Tree</i></figcaption>
@@ -34,7 +35,7 @@
 
                 <div class="slideshow-item">
                     <h2>Burgin Cove</h2>
-                    <p></p>
+                    <p>Burgin Cove was one of the most elevated sites but also existed within a residential area. The stream was next to a highway and had incised banks on that side. Exposed pipes could be seen within the stream. upstream from the sample site the channel width increased and became much more deep with a more shaded stream and more connected banks. Downstream were more exposed pipes and deep pools filled with sediment as well as shallow riffles.</p>
                     <figure>
                         <img src="images/burgin_cove.jpg" alt="Burgin Cove">
                         <figcaption><i>Burgin Cove</i></figcaption>
@@ -42,8 +43,10 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>Camp Branch</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>Camp Branch</h2>
+                    <p>Camp Branch was located further upstream near a rural area. A portion of the stream about 30 meters is unshaded and about 1 meter in width. The banks are short and well connected with the stream. Downstream the channel width increases and is shaded by tall hardwoods and multiple dying hemlock trees which have been infested with invasive wooly adelgid. small riffles exist in the unshaded portion while large rocks create large riffles within the shaded portion. 
+                    </p>
                     <figure>
                         <img src="images/camp_branch.jpg" alt="Camp Branch">
                         <figcaption><i>Camp Branch</i></figcaption>
@@ -51,8 +54,9 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>Flat Creek</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>Flat Creek</h2>
+                    <p>Flat Creek was the most forested site and had the coldest water based on observations and measurements. Large rocks and riffles were plentiful throughout the channel. The tributary site was wider than the main swannanoa at this location. stream flow was fast compared to other tributaries. </p>
                     <figure>
                         <img src="images/flat_creek.jpg" alt="Flat Creek">
                         <figcaption><i>Flat Creek</i></figcaption>
@@ -60,8 +64,9 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>Grassy Branch</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>Grassy Branch</h2>
+                    <p>Grassy Branch was located near a golfing range and had little shade. The site was entirely open downstream from where we sampled. Many golf balls could be found buried within the soft sandy sediments. Flow was slow and had many deep pools where objects prevented sediment from accumulating in front of them. A tent could be seen nearby and empty cleaning chemical bottles were seen on the bank.</p>
                     <figure>
                         <img src="images/grassy_branch.jpg" alt="Grassy Branch">
                         <figcaption><i>Grassy Branch</i></figcaption>
@@ -69,8 +74,9 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>Haw Creek</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>Haw Creek</h2>
+                    <p>Haw Creek is another urban site. It is located behind a Lowe's home improvement store. The stream has a lot of trash and garbage within it, and is filled with sediment. The riparian zone has trash on it as well. Sunlight spots visible within the stream. The stream exits a culver near the Lowes and it passes underneath a bridge.</p>
                     <figure>
                         <img src="images/haw_creek.jpg" alt="Haw Creek">
                         <figcaption><i>Haw Creek</i></figcaption>
@@ -78,8 +84,10 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>North Fork</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>North Fork</h2>
+                    <p>Located near a gravel and stone quarry. The site had large hardwoods that shaded most of the stream on both sides. a portion of the stream passes underneath a bridge but is otherwise far away from roads. Large rifles are present but some sections of the stream run shallow in comparison. These shallow portions had accumulated a decent amount of sediment.
+                    </p>
                     <figure>
                         <img src="images/north_fork.jpg" alt="North Fork">
                         <figcaption><i>North Fork</i></figcaption>
@@ -87,8 +95,10 @@
                     <br>
                 </div>
             
-                <div class="slideshow-item"><h2>Sweeten Creek</h2>
-                    <p></p>
+                <div class="slideshow-item">
+                    <h2>Sweeten Creek</h2>
+                    <p>Sweeten Creek is the most Urban site and the lowest elevated furthest downstream. The sample site can be characterizied by having a heavily incised channel with asphalt surface on either side of the banks. The stream runs through the Biltmore area which is a popular tourist spot and is also heavily developed. The sampled area sits between two culvers which may keep sediments trapped.
+                    </p>
                     <figure>
                         <img src="images/sweeten_creek.png" alt="Sweeten Creek">
                         <figcaption><i>Sweeten Creek</i></figcaption>
@@ -105,34 +115,10 @@
         <footer>
             <div data-include="project-components/project-footer.html"></div>
         </footer>
-        
+
         <script src="project-scripts/HTMLInclude.min.js"></script>
 
-        <script> const slideshowItems = document.querySelectorAll('.slideshow-item');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            let currentIndex = 0;
-    
-            function showSlide(index) {
-                slideshowItems.forEach(item => item.style.display = 'none');
-                slideshowItems[index].style.display = 'block';
-            }
-    
-            function showPrevSlide() {
-                currentIndex = (currentIndex - 1 + slideshowItems.length) % slideshowItems.length;
-                showSlide(currentIndex);
-            }
-    
-            function showNextSlide() {
-                currentIndex = (currentIndex + 1) % slideshowItems.length;
-                showSlide(currentIndex);
-            }
-    
-            prevBtn.addEventListener('click', showPrevSlide);
-            nextBtn.addEventListener('click', showNextSlide);
-    
-            // Show the first slide initially
-            showSlide(currentIndex);</script>
+        <script src="project-scripts/slide-show.js"></script>
     </body> 
 </html>
 
