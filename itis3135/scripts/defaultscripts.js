@@ -48,6 +48,19 @@ function polygonAlert(){
     } else alert("please enter a number between 1 and 10!");
 }
 
+function displayChoice() {
+    let selectedElement = document.getElementById("favorite-dog");
+    let selectedValue = selectedElement.options[selectedElement.selectedIndex].value;
+    let displayUserChoice = document.getElementById("display-choice");
+    displayUserChoice.textContent="Favorite Dog: " + selectedValue;
+}
+
+const radioButtons = document.getElementsByName("color");
+radioButtons.forEach(radioButton => {
+    radioButton.addEventListener("change", () {
+        colo
+    })
+})
 
 
 /*GET RANDOM ELEMENT
