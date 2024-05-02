@@ -3,7 +3,7 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob Dormadys Jolly Dog || ITIS3135 || Home</title>
+        <title>Jacob Dormadys Jolly Dog || ITIS3135 || Build Your Own</title>
         <link rel="stylesheet" href="styles/default.css">
         <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 
@@ -15,8 +15,58 @@
         </header>
     
         <main>
-            <h2>Home</h2>
-            
+            <h2>BYO form</h2>
+            <h3>Please fill out the form below:</h3>
+            <form>
+               <fieldset>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="mascot">Mascot: </label>
+                <input type="text" id="mascot" name="mascot" required>
+                <br>
+                <label for="profile-picture">Upload a Picture</label>
+                <input type="file" name="file" required>
+                <br>
+                <label for="image-caption">Image Caption: </label>
+                <input type="text" id="image-caption" name="image-caption" required>
+                <br>
+                <label for="personal-background">Personal Background: </label>
+                <input type="text" id="personal-background" name="personal-background" required>
+                <br>
+                <label for="professional-background">Professional Background: </label>
+                <input type="text" id="professional-background" name="professional-background" required>
+                <br>
+                <label for="academic-background">Academic Background: </label>
+                <input type="text" id="academic-background" name="academic-background" required>
+                <br>
+                <label for="web-background">Background in Web Development: </label>
+                <input type="text" id="web-background" name="web-background" required>
+                <br>
+                <label for="computer-platform">Primary Computer Platform: </label>
+                <input type="text" id="computer-platform" name="computer-platform" required>
+                <br>
+                </fieldset>
+
+                <!-- -->
+                <!--add new input-->
+                <!-- -->
+                <fieldset>
+                <label for="funny-thing">Funny Thing? </label>
+                <input type="text" id="funny-thing" name="funny-thing">
+                <br>
+                <label for="extra">Anything Else? </label>
+                <input type="text" id="extra" name="extra">
+                <br>
+                <label for="agree-checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                <input type="checkbox" id="agree-checkbox" name="agree-checkbox" required>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+            <div id="user-output"></div>
         </main>
 
         <footer>

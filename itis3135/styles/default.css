@@ -85,8 +85,13 @@ button{
     color: white;
 }
 label{
-    padding-right: 8px;
+    text-align: left;
+    display: block;
 }
 fieldset{
     border-style: none;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-inline-size: min-content;
 }
