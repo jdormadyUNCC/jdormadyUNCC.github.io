@@ -55,12 +55,15 @@ function displayChoice() {
     displayUserChoice.textContent="Favorite Dog: " + selectedValue;
 }
 
-const radioButtons = document.getElementsByName("color");
-radioButtons.forEach(radioButton => {
-    radioButton.addEventListener("change", () {
-        colo
-    })
-})
+document.addEventListener("DOMContentLoaded", function() {
+    const radioButtons = document.getElementsByName("color");
+    const colorRectangle = document.getElementById("color-rectangle");
+    radioButtons.forEach(radioButton => {
+        radioButton.addEventListener("change", event => {
+            colorRectangle.style.backgroundColor = event.target.value;
+        });
+    });    
+});
 
 
 /*GET RANDOM ELEMENT
