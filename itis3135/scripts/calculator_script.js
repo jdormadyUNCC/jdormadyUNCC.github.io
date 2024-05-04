@@ -12,7 +12,7 @@ function subtraction() {
     document.getElementById("result").value = result;
 }
 
-function multiplicaiton(){
+function multiplication(){
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     var result = num1 * num2;
