@@ -44,6 +44,13 @@ nav a:hover {
     padding: 10px;
     text-decoration: none; 
 }
+a {
+    text-decoration: none;
+    color:#006d18
+}
+ a:hover {
+    color: rgb(0, 191, 127);
+ }
 
 main {
     margin-bottom: 40px;
