@@ -103,3 +103,13 @@ img {
     height: auto;
     margin-bottom: 20px;
 }
+button {
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 5px;
+
+}
+
+.prev-button{
+margin-right: 50%;
+}
