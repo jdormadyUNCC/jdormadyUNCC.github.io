@@ -22,12 +22,27 @@ header {
 nav {
     margin-top: 20px;
     font-size: 20px;
+  
 }
 
-nav a {
+/*nav a {
     text-decoration: none;
     margin: 0 10px;
-    color: #09432a;
+    padding: 10px;
+    color: rgb(75, 122, 34);
+    
+}
+*/
+nav a:hover {
+    color: aquamarine;
+}
+.nav-box{
+    background-color: rgb(9, 185, 185);
+    color: rgba(1, 80, 5, 0.925);
+    border-radius: 30px;
+    box-shadow: 0 0 10px;
+    padding: 10px;
+    text-decoration: none; 
 }
 
 main {
